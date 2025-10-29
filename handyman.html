@@ -1,0 +1,276 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>HandyHome: Online Home Maintenance Services</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/bookings.css" />
+		<link rel="shortcut icon" href="images/Logo.png" type="image/x-icon">
+	</head>
+	<body class="is-preload right-sidebar">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header-wrapper">
+					<header id="header" class="container">
+
+						<!-- Logo -->
+							<div id="logo">
+								<a href="index.html" class="logo"><img src="images/logo.png" alt="HandyHome Logo" /></a>
+								<span></span>
+							</div>
+
+						<!-- Nav -->
+							<nav id="nav">
+								<ul>
+									<li><a href="index.html">Welcome</a></li>
+									<li class="current">
+										<a href="services.html">Services</a>
+										<ul>
+											<li><a href="plumbing.html">Plumbing</a></li>
+											<li><a href="electrical.html">Electrical</a></li>
+											<li>
+												<a href="#">Cleaning</a>
+												<ul>
+													<li><a href="aircon.html">Air Condition</a></li>
+													
+												</ul>
+											</li>
+											<li class="current"><a href="handyman.html">Handyman</a></li>
+										</ul>
+									</li>
+									<li><a href="subs.html">Subscriptions</a></li>
+                                    <li><a href="bookings.html">My Bookings</a></li>
+									<li><a href="help.html">Help Center</a></li>
+									
+								</ul>
+							</nav>
+
+					</header>
+				</div>
+
+			<!-- Main -->
+				<div id="main-wrapper">
+					<div class="container">
+						<div class="row gtr-200">
+							<div class="col-8 col-12-medium">
+								<div id="content">
+
+									<!-- Content -->
+										<article>
+
+											<h2>Handyman Services</h2>
+
+											<p><strong>Reliable and Skilled Handyman Solutions for Your Home</strong><br>At HandyHome, we offer expert handyman services designed to help you maintain, repair, and improve your living space with ease. Whether it’s fixing, building, or installing — our trusted professionals handle it all efficiently and safely.</p>
+
+											<h3>What We Offer</h3>
+											<ul>
+												<li>
+													<strong>Home Repairs</strong> — From fixing doors, cabinets, and shelves to patching walls, we handle all kinds of small household repairs.
+												</li>
+												<li>
+													<strong>Furniture Assembly</strong> — We assemble furniture of all brands and styles, ensuring safety and precision.
+												</li>
+												<li>
+													<strong>Painting & Wall Restoration</strong> — Refresh your home with professional painting and wall patch-up services.
+												</li>
+												<li>
+													<strong>Fixture Installation</strong> — Installation of shelves, curtain rods, wall décor, mirrors, and more.
+												</li>
+												<li>
+													<strong>Tile & Flooring Repairs</strong> — We fix cracked tiles or uneven flooring to keep your home looking great.
+												</li>
+												<li>
+													<strong>Custom Carpentry</strong> — Need custom woodwork or small construction projects? Our skilled carpenters have you covered.
+												</li>
+											</ul>
+
+											<h3>Why Choose HandyHome?</h3>
+											<ul class="quality-service">
+												<li><strong>Experienced Professionals:</strong> Our handymen are skilled, reliable, and trained to handle various home repair tasks.</li>
+												<li><strong>Affordable Pricing:</strong> Transparent pricing with no hidden charges — you get great service at a fair cost.</li>
+												<li><strong>On-Time and Efficient:</strong> We value your time. Our team arrives promptly and completes tasks efficiently.</li>
+												<li><strong>All-in-One Solution:</strong> From plumbing and painting to carpentry, HandyHome is your complete home maintenance partner.</li>
+											</ul>
+										</article>
+
+								</div>
+							</div>
+							<div class="col-4 col-12-medium">
+								<div id="sidebar">
+
+									<!-- Sidebar -->
+										<section>
+											<h3>Need Help Around the House?</h3>
+											<p>From small fixes to full installations, our expert handymen are here to help. <strong>Book Now</strong> and make your home improvement easy and worry-free!</p>
+											<ul>
+												<li><strong>Basic Task (₱600)</strong> – Furniture assembly, fixture installation, or light repairs</li>
+												<li><strong>Advanced Task (₱1000)</strong> – Painting, carpentry, or multiple-room repairs</li>
+											</ul>
+											<footer>
+												<a id="openModalBtn" class="button icon solid fa-arrow-circle-right">Book Now</a>
+                                            </footer>
+										</section>
+
+										<section>
+											<h3>Popular Services</h3>
+											<ul class="style2">
+												<li><a href="#">Plumbing & Leak Repairs</a></li>
+												<li><a href="#">Electrical Maintenance</a></li>
+												<li><a href="#">Handyman & Helper</a></li>
+												<li><a href="#">Aircon & Appliance Check</a></li>
+											</ul>
+										</section>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+<!-- Popup Modal -->
+			<div id="bookingModal" class="modal">
+				<div class="modal-content">
+					<span class="close" id="closeModalBtn">&times;</span>
+					<h2>Book a Service</h2>
+					<form id="bookingForm">
+						<label for="name"><b>Full Name</b></label>
+						<input type="text" id="name" placeholder="Enter your name" required>
+
+						<label for="service"><b>Service Type</b></label>
+						<select id="service" required>
+							<option value="">Select a service</option>
+							<option value="Plumbing">Plumbing</option>
+							<option value="Electrical">Electrical</option>
+							<option value="Air Conditioning">Air Condition Cleaning</option>
+							<option value="Handyman">Handyman</option>
+						</select>
+						<label for="fixType"><b>Type of Fix</b></label>
+						<select id="fixType" required>
+						<option value="">Select type</option>
+						<option value="Minor Fix">Minor Fix</option>
+						<option value="Major Fix">Major Fix</option>
+					</select>
+						<label for="date"><b>Preferred Date</b></label>
+						<input type="date" id="date" required>
+
+						<label for="location"><b>Location</b></label>
+						<input type="text" id="location" placeholder="Enter your address or area" required>	
+						
+						<label for="payment"><b>Payment Option</b></label>
+						<select id="payment" required>
+							<option value="">Select payment method</option>
+							<option value="Cash on Service">Cash on Service</option>
+							<option value="GCash">GCash</option>
+							<option value="PayMaya">PayMaya</option>
+							<option value="Credit/Debit Card">Credit/Debit Card</option>
+						</select>
+
+						<!-- Hidden by default -->
+						<div id="paymentDetails" style="display:none;">
+							<label for="paymentNumber"><b>Payment/Card Number</b></label>
+							<input type="text" id="paymentNumber" placeholder="Enter your number or card details" />
+						</div>
+						<label for="message"><b>Additional Notes</b></label>
+						<textarea id="message" rows="3" placeholder="Any specific details..."></textarea>
+						<p>By submitting your contact details, you are providing your data to HandyHome Services, who may contact you for marketing purposes.</p>
+						
+						
+						
+						<button type="submit">Submit</button>
+					</form>
+				</div>
+			</div>
+
+<!-- Footer -->
+				<div id="footer-wrapper">
+					<footer id="footer" class="container">
+						<div class="row">
+							<div class="col-3 col-6-medium col-12-small">
+
+								<!-- Links -->
+									<section class="widget links">
+										<h3>Services</h3>
+										<ul class="style2">
+											<li><a href="plumbing.html">Plumbing</a></li>
+											<li><a href="electrical.html">Electrical Works</a></li>
+											<li><a href="aircon.html">Cleaning</a></li>
+											<li><a href="handyman.html">Handyman</a></li>
+											
+										</ul>
+									</section>
+
+							</div>
+							<div class="col-3 col-6-medium col-12-small">
+
+								<!-- Links -->
+									<section class="widget links">
+										<h3>Customer</h3>
+										<ul class="style2">
+											<li><a href="services.html">Book a Service</a></li>
+											<li><a href="help.html">How It Works</a></li>
+											<li><a href="help.html">FAQs</a></li>
+											<li><a href="help.html">Payment Options</a></li>
+											<li><a href="about.html">Service Guarantee</a></li>
+										</ul>
+									</section>
+
+							</div>
+							<div class="col-3 col-6-medium col-12-small">
+
+								<!-- Links -->
+									<section class="widget links">
+										<h3>Company</h3>
+										<ul class="style2">
+											<li><a href="about.html">About Us</a></li>
+											<li><a href="#">Careers</a></li>
+											<li><a href="#">Become a Provider</a></li>
+											<li><a href="#">Privacy Policy</a></li>
+											<li><a href="#">Terms of Service</a></li>
+										</ul>
+									</section>
+
+							</div>
+							<div class="col-3 col-6-medium col-12-small">
+
+								<!-- Contact -->
+									<section class="widget contact last">
+										<h3>Contact Us</h3>
+										<ul>
+											<li><a href="https://x.com" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+											<li><a href="https://facebook.com" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+											<li><a href="https://instagram.com" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+											</ul>
+										<p>HandyHome HQ<br>
+										Talisay City, Cebu<br>
+										(800) 555-0000<br> support@handyhome.ph</p>
+									</section>
+
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12">
+								<div id="copyright">
+									<ul class="menu">
+										<li>&copy; HandyHome. All rights reserved</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</footer>
+				</div>
+
+			</div>
+
+		<!-- Scripts -->
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+            <script src="assets/js/bookings.js"></script>
+
+	</body>
+</html>
