@@ -2802,3 +2802,31 @@ input, select, textarea {
 			}
 
 	}
+	/* Responsive Bookings Table */
+.table-container {
+	width: 100%;
+	overflow-x: auto;        /* Enables horizontal scrolling */
+	-webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+table th, table td {
+	padding: 10px;
+	text-align: left;
+	white-space: nowrap;     /* Prevents text wrapping */
+}
+
+/* Optional: smaller text and spacing on mobile */
+@media screen and (max-width: 768px) {
+	table th, table td {
+		padding: 8px;
+		font-size: 0.85em;
+	}
+	table th {
+		font-size: 0.9em;
+	}
+}
