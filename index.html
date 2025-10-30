@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/bookings.css" />
 		<link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
 	</head>
 	<body class="is-preload homepage">
@@ -35,13 +36,10 @@
 											<li><a href="plumbing.html">Plumbing</a></li>
 											<li><a href="electrical.html">Electrical</a></li>
 											<li>
-												<a href="#">Cleaning</a>
-												<ul>
-													<li><a href="aircon.html">Air Condition</a></li>
-													
-												</ul>
+												<a href="aircon.html">Air conditioning Services</a>
+												
 											</li>
-											<li><a href="handyman.html">Handyman</a></li>
+											<li><a href="handyman.html">Genaral Repairs</a></li>
 										</ul>
 									</li>
 									<li><a href="subs.html">Subscriptions</a></li>
@@ -64,7 +62,8 @@
 							</div>
 							<div class="col-5 col-12-medium">
 								<ul>
-									<li><a href="subs.html" class="button large icon solid fa-arrow-circle-right">Ok let's go</a></li>
+									<li><a href="services.html" class="button large icon solid fa-arrow-circle-right">Book a Service</a></li>
+
 									<li><a href="about.html" class="button alt large icon solid fa-question-circle">More info</a></li>
 								</ul>
 							</div>
@@ -110,18 +109,34 @@
 
 								<!-- Box -->
 									<section class="box feature">
-										<a href="aircon.html" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+										<a href="aircon.html" class="image featured"><img src="images/pic03.jpg" alt="Aircon" /></a>
 										<div class="inner">
 											<header>
-												<h2>Cleaning Services</h2>
-												<p>Make your home spotless</p>
+												<h2>Air Conditioning Services</h2>
+												<p>Cleaning and Maintenance</p>
 											</header>
-											<p>Keep your home cool and your air clean with our professional AC maintenance service.</p>
+											<p>We clean, repair, and install air conditioning units to keep your home cool and comfortable.</p>
 										</div>
 									</section>
 
 							</div>
-						</div>
+							
+								<div class="col-4 col-12-medium">
+									<section class="box feature">
+										<a href="handyman.html" class="image featured"><img src="images/pic04.jpg" alt="General Repairs" /></a>
+										<div class="inner">
+											<header>
+												<h2>General Repairs Services</h2>
+												<p>For all your home repair needs</p>
+											</header>
+											<p>Quick fixes, furniture assembly, and general maintenance — all done by trusted pros.</p>
+										</div>
+									</section>
+								</div>
+		
+					
+				
+
 					</div>
 				</div>
 
@@ -164,7 +179,58 @@
 						</div>
 					</div>
 				</div>
+				<div id="bookingModal" class="modal">
+				<div class="modal-content">
+					<span class="close" id="closeModalBtn">&times;</span>
+					<h2>Book a Service</h2>
+					<form id="bookingForm">
+						<label for="name"><b>Full Name</b></label>
+						<input type="text" id="name" placeholder="Enter your name" required>
 
+						<label for="service"><b>Service Type</b></label>
+						<select id="service" required>
+							<option value="">Select a service</option>
+							<option value="Plumbing">Plumbing</option>
+							<option value="Electrical">Electrical</option>
+							<option value="Air Conditioning">Air Condition Cleaning</option>
+							<option value="Handyman">General Repairs</option>
+						</select>
+						<label for="fixType"><b>Type of Fix</b></label>
+						<select id="fixType" required>
+						<option value="">Select type</option>
+						<option value="Minor Fix">Minor Fix</option>
+						<option value="Major Fix">Major Fix</option>
+					</select>
+						<label for="date"><b>Preferred Date</b></label>
+						<input type="date" id="date" required>
+
+						<label for="location"><b>Location</b></label>
+						<input type="text" id="location" placeholder="Enter your address or area" required>	
+						
+						<label for="payment"><b>Payment Option</b></label>
+						<select id="payment" required>
+							<option value="">Select payment method</option>
+							<option value="Cash on Service">Cash on Service</option>
+							<option value="GCash">GCash</option>
+							<option value="PayMaya">PayMaya</option>
+							<option value="Credit/Debit Card">Credit/Debit Card</option>
+						</select>
+
+						<!-- Hidden by default -->
+						<div id="paymentDetails" style="display:none;">
+							<label for="paymentNumber"><b>Payment/Card Number</b></label>
+							<input type="text" id="paymentNumber" placeholder="Enter your number or card details" />
+						</div>
+						<label for="message"><b>Additional Notes</b></label>
+						<textarea id="message" rows="3" placeholder="Any specific details..."></textarea>
+						<p>By submitting your contact details, you are providing your data to HandyHome Services, who may contact you for marketing purposes.</p>
+						
+						
+						
+						<button type="submit">Submit</button>
+					</form>
+				</div>
+			</div>
 			<!-- Footer -->
 				<div id="footer-wrapper">
 					<footer id="footer" class="container">
@@ -177,8 +243,8 @@
 										<ul class="style2">
 											<li><a href="plumbing.html">Plumbing</a></li>
 											<li><a href="electrical.html">Electrical Works</a></li>
-											<li><a href="aircon.html">Cleaning</a></li>
-											<li><a href="handyman.html">Handyman</a></li>
+											<li><a href="aircon.html">Air conditioning Services</a></li>
+											<li><a href="handyman.html">General Repairs</a></li>
 											
 										</ul>
 									</section>
@@ -220,13 +286,13 @@
 									<section class="widget contact last">
 										<h3>Contact Us</h3>
 										<ul>
-											<li><a href="https://x.com" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-											<li><a href="https://facebook.com" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-											<li><a href="https://instagram.com" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+											<li><a href="https://tiktok.com" class="icon brands fa-tiktok" target="_blank"><span class="label">Twitter</span></a></li>
+											<li><a href="https://www.facebook.com/profile.php?id=61580841904532" class="icon brands fa-facebook-f" target="_blank"><span class="label">Facebook</span></a></li>
+											<li><a href="https://instagram.com" class="icon brands fa-instagram"><span class="label" target="_blank">Instagram</span></a></li>
 											</ul>
-										<p>HandyHome HQ<br>
-										Talisay City, Cebu<br>
-										(800) 555-0000<br> support@handyhome.ph</p>
+										<p>Paseo Arcenas Banawa<br>
+										Cebu City, Cebu<br>
+										09083452114 or 09925233411<br> handyhomecebu@gmail.com</p>
 									</section>
 
 							</div>
@@ -253,6 +319,8 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			 <script src="assets/js/bookings.js"></script>
+			 <script src="assets/js/toggleServices.js"></script>
 
 	</body>
 </html>
