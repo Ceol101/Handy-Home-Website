@@ -49,3 +49,14 @@ if (paymentSelect) {
 		}
 	});
 }
+
+const feedbackForm = document.getElementById("feedbackForm");
+
+if (feedbackForm) {
+	feedbackForm.addEventListener("submit", (e) => {
+		e.preventDefault();
+		alert("✅ Thank you for your feedback! We appreciate your time.");
+		feedbackForm.reset();
+	});
+}
+
