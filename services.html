@@ -9,6 +9,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/worker.css" />
         <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
 	</head>
 	<body class="is-preload no-sidebar">
@@ -37,7 +38,8 @@
 												
 											</li>
 											<li><a href="handyman.html">General Repairs</a></li>
-								</ul>
+								<li><a href="services.html#verified-workers">Verified Workers</a></li>
+										</ul>
 							<li><a href="subs.html">Subscriptions</a></li>
 							<li><a href="bookings.html">My Bookings</a></li>
 							<li><a href="help.html">Help Center</a></li>
@@ -112,8 +114,101 @@
 											<p>Quick fixes, furniture assembly, and general maintenance — all done by trusted pros.</p>
 										</div>
 									</section>
+									
 								</div>
+								
 							</div>
+		<!-- Verified Workers Section -->
+<section id="verified-workers" class="box-section">
+	<div class="container">
+		<header class="major" style="text-align:center; margin-bottom: 2em;">
+			<h2>Our Verified Workers</h2>
+			<p>Meet our trusted and skilled professionals ready to serve you.</p>
+		</header>
+
+		<div class="workers-grid">
+			<!-- Plumbers -->
+<div class="worker-card" data-worker="rodel">
+	<div class="worker-photo"><img src="images/worker1.png" alt="Rodel Manalili"></div>
+	<h3>Rodel Manalili</h3>
+	<p class="occupation">Plumber</p>
+	<p class="details">Years of experience in residential and commercial plumbing and Maintained a 98% leak-free rate across all completed jobs.</p>
+	<footer><a href="plumbing.html" class="button small">Book Service</a></footer>
+</div>
+
+<div class="worker-card" data-worker="jerome">
+	<div class="worker-photo"><img src="images/worker1.png" alt="Jerome Alvarado"></div>
+	<h3>Jerome Alvarado</h3>
+	<p class="occupation">Plumber</p>
+	<p class="details">Certified plumber specializing in fixture installation and drainage maintenance. Trusted by Cebu homeowners.</p>
+	<footer><a href="plumbing.html" class="button small">Book Service</a></footer>
+</div>
+
+<!-- Electricians -->
+<div class="worker-card" data-worker="jomar">
+	<div class="worker-photo"><img src="images/worker2.png" alt="Jomar Dela Cruz"></div>
+	<h3>Jomar Dela Cruz</h3>
+	<p class="occupation">Electrician</p>
+	<p class="details">Licensed electrician with years of experience in wiring and circuit troubleshooting. Safety-first service.</p>
+	<footer><a href="electrical.html" class="button small">Book Service</a></footer>
+</div>
+
+<div class="worker-card" data-worker="reggie">
+	<div class="worker-photo"><img src="images/worker2.png" alt="Reggie Bautista"></div>
+	<h3>Reggie Bautista</h3>
+	<p class="occupation">Electrician</p>
+	<p class="details">Completed 10+ full-house rewiring projects in Mabolo. Expert in Wiring installation and Lighting Setup</p>
+	<footer><a href="electrical.html" class="button small">Book Service</a></footer>
+</div>
+
+<!-- Aircon Technicians -->
+<div class="worker-card" data-worker="arvin">
+	<div class="worker-photo"><img src="images/worker3.png" alt="Arvin Razon"></div>
+	<h3>Arvin Razon</h3>
+	<p class="occupation">Air Conditioning Technician</p>
+	<p class="details">Expert in AC diagnostics and Refrigerant leak detection. Serviced 250+ AC units in Cebu residences and offices.</p>
+	<footer><a href="aircon.html" class="button small">Book Service</a></footer>
+</div>
+
+<div class="worker-card" data-worker="ramon">
+	<div class="worker-photo"><img src="images/worker3.png" alt="Ramon Delos Reyes"></div>
+	<h3>Ramon Delos Reyes</h3>
+	<p class="occupation">Air Conditioning Technician</p>
+	<p class="details">Specialist in compressor repair and AC system installation. Certified by major brands like Daikin & Panasonic.</p>
+	<footer><a href="aircon.html" class="button small">Book Service</a></footer>
+</div>
+
+<!-- Handymen -->
+<div class="worker-card" data-worker="nestor">
+	<div class="worker-photo"><img src="images/worker4.png" alt="Nestor Alcaraz"></div>
+	<h3>Nestor Alcaraz</h3>
+	<p class="occupation">Repairman</p>
+	<p class="details">TESDA-certified Carpenter with years experience. Skilled in carpentry, repair, and home renovation.</p>
+	<footer><a href="handyman.html" class="button small">Book Service</a></footer>
+</div>
+
+<div class="worker-card" data-worker="carlo">
+	<div class="worker-photo"><img src="images/worker4.png" alt="Carlo Dimaano"></div>
+	<h3>Carlo Dimaano</h3>
+	<p class="occupation">Repairman</p>
+	<p class="details">Reliable Repairman known for clean and precise repair and framing work. Expert in  Furniture repair & Door framing.</p>
+	<footer><a href="handyman.html" class="button small">Book Service</a></footer>
+</div>
+
+		</div>
+	</div>
+</section>
+
+<!-- Worker Details Popup -->
+<div id="workerModal" class="modal">
+	<div class="modal-content">
+		<span class="close">&times;</span>
+		<div id="workerDetails"></div>
+	</div>
+</div>
+
+
+					
 
 							<footer style="text-align:center; margin-top: 2em;">
 							<!--	<a href="bookings.html" class="button icon solid fa-arrow-circle-right">Book a Service Now</a>
@@ -165,7 +260,7 @@
 										<h3>Company</h3>
 										<ul class="style2">
 											<li><a href="about.html">About Us</a></li>
-											<li><a href="#">Careers</a></li>
+											<li><a href="services.html#verified-workers">Verified Workers</a></li>
 											<li><a href="#">Become a Provider</a></li>
 											<li><a href="#">Privacy Policy</a></li>
 											<li><a href="#">Terms of Service</a></li>
@@ -204,6 +299,7 @@
 
 			</div>
 
+
 		<!-- Scripts -->
 
 			<script src="assets/js/jquery.min.js"></script>
@@ -212,6 +308,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/workers.js"></script>
 
 	</body>
 </html>
